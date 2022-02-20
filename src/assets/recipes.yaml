@@ -1,0 +1,247 @@
+Antipasti:
+  Foccacia:
+    rating: 4
+    recipe:
+      Mise en place:
+        - Aucune
+      Avant cuisson:
+        - Badigeonner d'huile d'olive
+        - Romarin
+        - Fleur de sel
+        - Poivre
+    ingredients:
+      Huile d'olive: 0
+      Romarin: 0
+      Fleur de sel: 0
+      Poivre: 0
+    images:
+      - pizza/foccacia.jpg
+Pizze:
+  Pizza Rouges:
+    Pizza Reine:
+      rating: 4
+      recipe:
+        Mise en place:
+          - Egouter la mozzarella
+          - Decouper le champignon
+          - Preparer le basilic, jambon et persillade
+        Avant cuisson:
+          - Tomate
+          - Mozzarella
+          - Poivre
+        Post cuisson:
+          - Jambon Blanc
+          - Basilic
+          - Persillade
+      ingredients:
+        Tomate: 0
+        Mozzarella: 1
+        Champignons de paris: 1
+        Jambon Blanc: 2
+        Persillade: 0
+        Basilic: 0
+      images:
+        - pizza/reine1.jpg
+    Pizza Burrata Speck:
+      rating: 4.5
+      recipe:
+        Mise en place:
+          - TODO
+        Avant cuisson:
+          - Base Tomate
+          - Mozza
+        Post cuisson:
+          - Jambon cru
+          - Burrata entière + Basilic
+        Post ouverture Burrata:
+          - Plus de basilic
+          - Assaisonnement Burrata (sel, poivre, filet d'huile)
+          - Crème de Balsamique
+      ingredients:
+        Tomate: 0
+        Burrata: 1
+        Mozzarella: 1
+        Jambon Cru: 2
+        Crème de Balsamique: 0
+        Basilic: 0
+      images:
+        - pizza/burrata.jpg
+    Pizza Chorizo:
+      rating: 3
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Tomate: 0
+        Poivron: 1
+        Chorizo: 0
+        Paprika fumé: 0
+        Poivre de Madagascar: 0
+      images:
+        - pizza/chorizo.jpg
+  Pizza Blanches:
+    Pizza Mortadella:
+      rating: 5
+      recipe:
+        Mise en place:
+          - Egouter la mozzarella
+          - Concasser les pistaches
+          - Couper les copeaux de parmesan
+          - Couper les tomates en 4 et saler
+          - Preparer la mortadelle
+        Avant cuisson:
+          - Base Creme, Muscade, Poivre
+          - Mozzarella
+          - Poivre
+        Post cuisson:
+          - Mortadelle
+          - Tomates Cerises
+          - Pistaches
+          - Copeaux de parmesan
+      ingredients:
+        Crème: 0
+        Mortadelle: 4
+        Pistaches: 0
+        Mozzarella: 1
+        Tomates Cerises: 3
+        Persillade: 0
+        Muscade: 0
+      images:
+        - pizza/mortadella1.jpg
+        - pizza/mortadella2.jpg
+    Pizza Bleu-Noix:
+      rating: 4.5
+      recipe:
+        Mise en place:
+          - Decouper le bleu et le cantal en dès
+          - Preparez les noix
+        Avant cuisson:
+          - Crème épaisse + Muscade
+          - Cantal
+          - Bleu d'auvergne / Fourme d'ambert
+          - Noix
+          - Poivre
+        Post cuisson:
+          - Ciboulette
+          - Jambon cuit ?
+          - Pommes ? Poire ?
+      ingredients:
+        Crème: 0
+        Cantal: 0
+        Fourme d'ambert: 0
+        Noix: 0
+        Ciboulette: 0
+      images:
+        - pizza/bleunoix.jpg
+        - pizza/bleunoix2.jpg
+    Pizza Miele Capra:
+      rating: 4
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Crème: 0
+        Chèvre: 0
+        Mozzarella: 1
+        Jambon blanc: 0
+        Miel: 0
+      images:
+        - pizza/mielecapra.jpg
+    Pizza Dolomite:
+      rating: 5
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Crème: 0
+        Mozzarella: 1
+        Brézain: 0
+        Jambon Blanc: 1
+        Bresaola: 2
+        Poivre de Madagascar: 0
+      images:
+        - pizza/dolomite.jpg
+Pâte à pizza:
+  Pate Ooni:
+    rating: 5
+    recipe:
+      Preparation:
+        - Mesurer Farine / Eau / Levure et Sel via l'appli Ooni
+        - Mélanger levure + un peu d'eau puis un peu de farine
+        - Mettre le sel dans l'eau
+        - Attendre 10-15 minutes
+        - Ajouter le reste de l'eau puis la farine
+        - Pétrir environ 20min
+        - Toute les 30-40 mins tourner la pâte (2 à 4 fois)
+        - Diviser en pâtons
+      Cuisson de la pate:
+        - Utiliser une pierre a pizza dans un four classique ou un four Ooni
+        - Faire chauffer la pierre a temperature maximale (30min en four standard)
+        - Enfourner pour quelques minutes
+    ingredients:
+      Farine: 0
+      Levure Fraiche: 0
+      Eau: 0
+      Sel: 0
+    images:
+      - pizza/pateooni.jpg
+      - pizza/pateooni2.jpg
+Pasta:
+  Caccio e Pepe:
+    rating: 4.5
+    recipe:
+      - TODO:
+        - todo
+    ingredients:
+        Linguine: 0
+        Poivre: 0
+        Grana Padano: 0
+        Basilic: 0
+    images:
+      - pasta/caccioepepe1.jpg
+  Pasta con Polpete:
+    rating: 4.5
+    recipe:
+      - TODO:
+        - todo
+    ingredients:
+        Penne rigate: 0
+        Sauce tomate: 0
+        Polpete: 0
+        Poivre: 0
+        Grana Padano: 0
+        Basilic: 0
+    images:
+      - pasta/polpete.jpg
+  Pasta alla carbonara:
+    rating: 4.5
+    recipe:
+      - TODO:
+        - todo
+    ingredients:
+        Spaghettoni: 0
+        Guanciale: 0
+        Grana Padano: 100
+        Pecorrino Romano: 100
+        Oeuf: 2
+        Basilic: 0
+    images:
+      - pasta/carbo.jpg
+Dessert:
+  Pizza Nutella:
+    rating: 4
+    recipe:
+      Mise en place:
+        - Nutella + Tonka
+      Post cuisson:
+        - Nutella Tonka
+        - Banane
+        - Pistaches
+        - Tonka
+    ingredients:
+      Nutella: 0
+      Fève de Tonka: 0
+      Banane: 0
+      Pistaches: 0
+    images:
+      - pizza/nutella.jpg
