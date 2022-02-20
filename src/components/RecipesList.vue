@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="mt-2 text-left">
+    <v-row style="margin:auto;width:99%;margin-bottom:-20px;">
       <v-text-field
         outlined
         label="Search for ingredients"
@@ -8,30 +8,23 @@
         v-model="curFreeSearch"
       ></v-text-field>
     </v-row>
-    <v-row class="mt-0 text-left">
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on, attrs }">
-          <v-chip
-            v-for="category in topLevelFilters"
-            :key="category"
-            class="ma-2"
-            :color="filteredTopLevelCategory == category ? 'green' : 'darkgrey'"
-            outlined
-            v-bind="attrs"
-            v-on="on"
-            @click="toogleCategory(category)"
-          >
-            {{ category }}
-            <v-icon v-if="filteredTopLevelCategory == category" color="lightgreen" right
-              >filter_alt</v-icon
-            >
-            <v-icon v-else color="grey" right>filter_alt_off</v-icon>
-          </v-chip>
-        </template>
-        <span>Cliquez pour filter</span>
-      </v-tooltip>
+    <v-row class="mt-0 ml-2 text-left" style="margin-bottom:-20px;">
+        <v-chip
+        v-for="category in topLevelFilters"
+        :key="category"
+        class="ma-2"
+        :color="filteredTopLevelCategory == category ? 'green' : 'darkgrey'"
+        outlined
+        @click="toogleCategory(category)"
+        >
+        {{ category }}
+        <v-icon v-if="filteredTopLevelCategory == category" color="lightgreen" right
+            >filter_alt</v-icon
+        >
+        <v-icon v-else color="grey" right>filter_alt_off</v-icon>
+        </v-chip>
     </v-row>
-    <v-row v-if="subLevelFilters.length>0" class="mt-3 text-left">
+    <v-row v-if="subLevelFilters.length>0" class="mt-4 ml-2 text-left" style="margin-bottom:-20px;">
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-chip
@@ -175,13 +168,16 @@ export default {
         }
       }
     },
+    saveCart: function () {
+        localStorage.setItem('cart', JSON.stringify(this.cart))
+    },
     addToCart: function (recipename) {
       if (!this.cart[recipename]) {
         this.$root.$set(this.cart, recipename, 1)
       } else {
         this.$root.$set(this.cart, recipename, this.cart[recipename]+1)
       }
-        localStorage.setItem('cart', JSON.stringify(this.cart))
+        this.saveCart()
     },
     openCart: function () {
       this.$refs.recipesCart.open();
@@ -196,11 +192,13 @@ export default {
       if (this.cart[recipeName] == 0) {
         this.$root.$delete(this.cart, recipeName)
       }
+      this.saveCart()
     },
     emptyCart: function () {
         for (let recipe in this.cart) {
             this.$root.$delete(this.cart, recipe)
         }
+        this.saveCart()
     }
   },
   created: function () {

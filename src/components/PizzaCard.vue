@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto my-5" max-width="374">
+  <v-card class="mx-auto my-5" width="374">
     <v-carousel
       hide-delimiter-background
       delimiter-icon="mdi-minus"
