@@ -12,17 +12,40 @@
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-chip
-            v-for="category in categories"
+            v-for="category in topLevelFilters"
             :key="category"
             class="ma-2"
-            :color="filteredCategory == category ? 'green' : 'darkgrey'"
+            :color="filteredTopLevelCategory == category ? 'green' : 'darkgrey'"
             outlined
             v-bind="attrs"
             v-on="on"
             @click="toogleCategory(category)"
           >
             {{ category }}
-            <v-icon v-if="filteredCategory == category" color="lightgreen" right
+            <v-icon v-if="filteredTopLevelCategory == category" color="lightgreen" right
+              >filter_alt</v-icon
+            >
+            <v-icon v-else color="grey" right>filter_alt_off</v-icon>
+          </v-chip>
+        </template>
+        <span>Cliquez pour filter</span>
+      </v-tooltip>
+    </v-row>
+    <v-row v-if="subLevelFilters.length>0" class="mt-3 text-left">
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-chip
+            v-for="category in subLevelFilters"
+            :key="category"
+            class="ma-2"
+            :color="filteredSubLevelCategory == category ? 'green' : 'darkgrey'"
+            outlined
+            v-bind="attrs"
+            v-on="on"
+            @click="toogleSubCategory(category)"
+          >
+            {{ category }}
+            <v-icon v-if="filteredSubLevelCategory == category" color="lightgreen" right
               >filter_alt</v-icon
             >
             <v-icon v-else color="grey" right>filter_alt_off</v-icon>
@@ -64,21 +87,49 @@ export default {
     RecipesCart,
   },
   data: () => ({
-    filteredCategory: "",
+    filteredTopLevelCategory: "",
+    filteredSubLevelCategory: "",
     curFreeSearch: "",
-    recipesMap: [],
+    recipesMap: {},
     recipes: [],
     categories: [],
     cart: {},
   }),
   computed: {
+    topLevelFilters: function () {
+        let rep = [];
+        for (let cat in recipesRawData) {
+            rep.push(cat)
+        }
+        return rep
+    },
+    subLevelFilters: function () {
+        let rep = [];
+        if (this.filteredTopLevelCategory == "")
+        {
+            return rep;
+        }
+        let catData = recipesRawData[this.filteredTopLevelCategory];
+        for (let subcat in catData) {
+            if (typeof catData[subcat] == "object" && !("recipe" in catData[subcat])) {
+                rep.push(subcat)
+            }
+        }
+        return rep
+    },
     filteredRecipes: function () {
       let rep = [];
       let search = this.curFreeSearch.toLowerCase();
       for (let recipe of this.recipes) {
         if (
-          this.filteredCategory != "" &&
-          recipe.path.indexOf(this.filteredCategory) == -1
+          this.filteredTopLevelCategory != "" &&
+          recipe.path.indexOf(this.filteredTopLevelCategory) == -1
+        ) {
+          continue;
+        }
+        if (
+          this.filteredSubLevelCategory != "" &&
+          recipe.path.indexOf(this.filteredSubLevelCategory) == -1
         ) {
           continue;
         }
@@ -99,7 +150,11 @@ export default {
   },
   methods: {
     toogleCategory: function (category) {
-      this.filteredCategory = this.filteredCategory == category ? "" : category;
+      this.filteredSubLevelCategory = ''
+      this.filteredTopLevelCategory = this.filteredTopLevelCategory == category ? "" : category;
+    },
+    toogleSubCategory: function (category) {
+      this.filteredSubLevelCategory = this.filteredSubLevelCategory == category ? "" : category;
     },
     addNewRecipe: function (curTypePath, recipeName, recipeData) {
       recipeData["name"] = recipeName;

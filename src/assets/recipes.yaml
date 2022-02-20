@@ -161,31 +161,49 @@ Pizze:
         Poivre de Madagascar: 0
       images:
         - pizza/dolomite.jpg
-Pâte à pizza:
-  Pate Ooni:
-    rating: 5
-    recipe:
-      Preparation:
-        - Mesurer Farine / Eau / Levure et Sel via l'appli Ooni
-        - Mélanger levure + un peu d'eau puis un peu de farine
-        - Mettre le sel dans l'eau
-        - Attendre 10-15 minutes
-        - Ajouter le reste de l'eau puis la farine
-        - Pétrir environ 20min
-        - Toute les 30-40 mins tourner la pâte (2 à 4 fois)
-        - Diviser en pâtons
-      Cuisson de la pate:
-        - Utiliser une pierre a pizza dans un four classique ou un four Ooni
-        - Faire chauffer la pierre a temperature maximale (30min en four standard)
-        - Enfourner pour quelques minutes
-    ingredients:
-      Farine: 0
-      Levure Fraiche: 0
-      Eau: 0
-      Sel: 0
-    images:
-      - pizza/pateooni.jpg
-      - pizza/pateooni2.jpg
+  Pâte à pizza:
+    Pate Ooni:
+      rating: 5
+      recipe:
+        Preparation:
+          - Mesurer Farine / Eau / Levure et Sel via l'appli Ooni
+          - Mélanger levure + un peu d'eau puis un peu de farine
+          - Mettre le sel dans l'eau
+          - Attendre 10-15 minutes
+          - Ajouter le reste de l'eau puis la farine
+          - Pétrir environ 20min
+          - Toute les 30-40 mins tourner la pâte (2 à 4 fois)
+          - Diviser en pâtons
+        Cuisson de la pate:
+          - Utiliser une pierre a pizza dans un four classique ou un four Ooni
+          - Faire chauffer la pierre a temperature maximale (30min en four standard)
+          - Enfourner pour quelques minutes
+      ingredients:
+        Farine: 0
+        Levure Fraiche: 0
+        Eau: 0
+        Sel: 0
+      images:
+        - pizza/pateooni.jpg
+        - pizza/pateooni2.jpg
+  Pizza Dessert:
+    Pizza Nutella:
+      rating: 4
+      recipe:
+        Mise en place:
+          - Nutella + Tonka
+        Post cuisson:
+          - Nutella Tonka
+          - Banane
+          - Pistaches
+          - Tonka
+      ingredients:
+        Nutella: 0
+        Fève de Tonka: 0
+        Banane: 0
+        Pistaches: 0
+      images:
+        - pizza/nutella.jpg
 Pasta:
   Caccio e Pepe:
     rating: 4.5
@@ -227,21 +245,3 @@ Pasta:
         Basilic: 0
     images:
       - pasta/carbo.jpg
-Dessert:
-  Pizza Nutella:
-    rating: 4
-    recipe:
-      Mise en place:
-        - Nutella + Tonka
-      Post cuisson:
-        - Nutella Tonka
-        - Banane
-        - Pistaches
-        - Tonka
-    ingredients:
-      Nutella: 0
-      Fève de Tonka: 0
-      Banane: 0
-      Pistaches: 0
-    images:
-      - pizza/nutella.jpg

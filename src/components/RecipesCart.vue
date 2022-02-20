@@ -6,7 +6,6 @@
       <v-list
         flat
         style="padding-left: 30px; padding-right: 30px"
-        :key="recipelistid"
         dense
       >
         <v-subheader>Recettes sélectionnées ({{totalRecipes}})</v-subheader>
@@ -44,7 +43,6 @@
       <v-list
         flat
         style="padding-left: 30px; padding-right: 30px"
-        :key="ingredientlistid"
         dense
       >
         <v-subheader>Total des ingrédients nécesssaires</v-subheader>
@@ -94,8 +92,6 @@ export default {
   props: ["cartData", "recipesData"],
   data: () => ({
     isOpened: false,
-    listid: 0,
-    ingredientlistid: 0,
     curRecipeData: {},
   }),
   computed: {
