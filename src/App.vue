@@ -11,7 +11,7 @@
           width="40"
         />
 
-        <h2 class="">Pizza BiS</h2>
+        <h2 class="">Gli Amici</h2>
       </div>
 
       <v-spacer></v-spacer>
