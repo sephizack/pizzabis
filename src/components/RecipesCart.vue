@@ -1,7 +1,13 @@
 <template>
   <v-dialog v-model="isOpened" width="800px">
     <v-card class="mt-3">
-      <v-card-title class="mt-4 ml-3">Panier actuel</v-card-title>
+      <v-card-title class="mt-4 ml-3">
+        Panier actuel
+        <v-spacer></v-spacer>
+        <v-btn icon @click="isOpened = false">
+          <v-icon>mdi-close</v-icon>
+        </v-btn></v-card-title
+      >
       <span v-if="isCartEmpty">
         <v-card-text class="text-center"> Votre panier est vide </v-card-text>
       </span>
