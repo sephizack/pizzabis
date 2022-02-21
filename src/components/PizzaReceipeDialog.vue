@@ -4,6 +4,7 @@
       <v-card-title>
         <span class="text-h4 mb-2 mt-1 mr-3">{{ recipeData.name }}</span>
         <v-rating
+        v-if="recipeData.rating>0"
           class="mb-1"
           :value="recipeData.rating"
           color="amber"

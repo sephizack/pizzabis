@@ -180,6 +180,10 @@ export default {
           }
         }
       }
+      // Sort by ranking
+      this.recipes.sort(function (first, second) {
+        return second.rating - first.rating;
+      });
     },
     saveCart: function () {
       localStorage.setItem("cart", JSON.stringify(this.cart));

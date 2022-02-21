@@ -44,7 +44,7 @@ Pizze:
       images:
         - pizza/reine1.jpg
     Pizza Burrata Speck:
-      rating: 4.5
+      rating: 4
       recipe:
         Mise en place:
           - TODO
@@ -93,7 +93,7 @@ Pizze:
       images:
         - pizza/prosciutto.jpg
     Pizza Tonno:
-      rating: 3
+      rating: 2.5
       recipe:
         TODO:
           - todo
@@ -165,7 +165,7 @@ Pizze:
       images:
         - todo.jpg
     Pizza Parma:
-      rating: 4
+      rating: 3.5
       recipe:
         TODO:
           - todo
@@ -235,7 +235,7 @@ Pizze:
         - pizza/bleunoix.jpg
         - pizza/bleunoix2.jpg
     Pizza Miele Capra:
-      rating: 4
+      rating: 3.5
       recipe:
         TODO:
           - todo
@@ -277,7 +277,7 @@ Pizze:
       images:
         - todo.jpg
     TODO - Pizza Indienne:
-      rating: 4
+      rating: 3
       recipe:
         TODO:
           - todo
@@ -332,7 +332,7 @@ Pizze:
         - todo.jpg
   Pâte à pizza:
     Pate Ooni:
-      rating: 5
+      rating: 0
       recipe:
         Preparation:
           - Mesurer Farine / Eau / Levure et Sel via l'appli Ooni

@@ -20,6 +20,7 @@
       <v-row class="mx-0 mt-0">
         <div>{{ recipeData.name }}</div>
         <v-rating
+          v-if="recipeData.rating>0"
           class="ml-3"
           :value="recipeData.rating"
           color="amber"
