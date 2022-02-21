@@ -28,6 +28,7 @@ Pizze:
         Avant cuisson:
           - Tomate
           - Mozzarella
+          - Champignons
           - Poivre
         Post cuisson:
           - Jambon Blanc
@@ -79,6 +80,105 @@ Pizze:
         Poivre de Madagascar: 0
       images:
         - pizza/chorizo.jpg
+    Pizza Prosciutto:
+      rating: 4
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Tomate: 0
+        Mozzarella: 1
+        Jambon blanc: 0
+        Basilic: 0
+      images:
+        - pizza/prosciutto.jpg
+    Pizza Tonno:
+      rating: 3
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Tomate: 0
+        Mozzarella: 1
+        Thon: 0
+        Huile d'huile: 0
+        Olives noire: 0
+        Poivre: 0
+      images:
+        - pizza/tonno.jpg
+    TODO - Pizza Carnasière:
+      rating: 0
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Tomate: 0
+        Boeuf haché: 1
+        Oignons: 0
+        Chorizo: 0
+        Olives noire: 0
+        Persillade: 0
+      images:
+        - todo.jpg
+    TODO - Pizza Althenoise:
+      rating: 0
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Tomate: 0
+        Paprika fumé: 0
+        Chipolata: 1
+        Merguez: 1
+        Mozzarella: 1
+        Miel: 0
+        Pistaches: 0
+      images:
+        - todo.jpg
+    TODO - Pizza Asiatique:
+      rating: 0
+      recipe:
+        TODO:
+          - todo
+        Cuire les legumes au Wok:
+          - todo
+      ingredients:
+        Tomate: 0
+        Champignons: 1
+        Oignons: 0
+        Sauce Soja: 0
+        Paprika fumé: 0
+      images:
+        - todo.jpg
+    TODO - Pizza Diavola:
+      rating: 0
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Tomate: 0
+        Mozzarella: 1
+        Spianata calabrese: 2
+        Pecorino picant: 0
+        Basilic: 0
+        Friarielli: 0
+      images:
+        - todo.jpg
+    Pizza Parma:
+      rating: 4
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Tomate: 0
+        Mozzarella: 1
+        Jambon cru: 2
+        Parmesan: 0
+        Roquette: 0
+        Basilic: 0
+        Balsamique: 0
+      images:
+        - pizza/parma.jpg
   Pizza Blanches:
     Pizza Mortadella:
       rating: 5
@@ -161,6 +261,75 @@ Pizze:
         Poivre de Madagascar: 0
       images:
         - pizza/dolomite.jpg
+    TODO - Pizza Savoyarde:
+      rating: 0
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Crème: 0
+        Pomme de terre: 1
+        Mozzarella: 1
+        Brezain: 0
+        Pancetta: 0
+        Bresaola: 0
+        Poivre de Madagascar: 0
+      images:
+        - todo.jpg
+    TODO - Pizza Indienne:
+      rating: 4
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Crème: 0
+        Curry: 0
+        Mozzarella: 1
+        Poulet: 0
+        Paprika fumé: 0
+      images:
+        - todo.jpg
+    TODO - Pizza Salmone:
+      rating: 0
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Crème: 0
+        Saumon fumé: 0
+        Citron: 0
+        Aneth: 0
+        Baies rose: 0
+      images:
+        - todo.jpg
+    TODO - Pizza Genova:
+      rating: 0
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Pesto: 0
+        Mozzarella: 1
+        Parmesan: 0
+        Jambon cru: 0
+        Pignons: 0
+      images:
+        - todo.jpg
+    TODO - Pizza 4 Formaggi:
+      rating: 0
+      recipe:
+        TODO:
+          - todo
+      ingredients:
+        Crème: 0
+        Scarmozza: 1
+        Chèvre: 0
+        Bleu: 0
+        Cantal: 0
+        Poivre: 0
+        Ciboulette: 0
+      images:
+        - todo.jpg
   Pâte à pizza:
     Pate Ooni:
       rating: 5

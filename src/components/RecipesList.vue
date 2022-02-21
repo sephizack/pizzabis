@@ -1,6 +1,8 @@
 <template>
   <v-container>
-    <v-row style="margin:auto;width:99%;margin-bottom:-20px;">
+    <v-row
+      style="margin: auto; width: 99%; margin-bottom: -20px; margin-top: 10px"
+    >
       <v-text-field
         outlined
         label="Search for ingredients"
@@ -8,23 +10,30 @@
         v-model="curFreeSearch"
       ></v-text-field>
     </v-row>
-    <v-row class="mt-0 ml-2 text-left" style="margin-bottom:-20px;">
-        <v-chip
+    <v-row class="mt-0 ml-2 text-left" style="margin-bottom: -20px">
+      <v-chip
         v-for="category in topLevelFilters"
         :key="category"
         class="ma-2"
         :color="filteredTopLevelCategory == category ? 'green' : 'darkgrey'"
         outlined
         @click="toogleCategory(category)"
-        >
+      >
         {{ category }}
-        <v-icon v-if="filteredTopLevelCategory == category" color="lightgreen" right
-            >filter_alt</v-icon
+        <v-icon
+          v-if="filteredTopLevelCategory == category"
+          color="lightgreen"
+          right
+          >filter_alt</v-icon
         >
         <v-icon v-else color="grey" right>filter_alt_off</v-icon>
-        </v-chip>
+      </v-chip>
     </v-row>
-    <v-row v-if="subLevelFilters.length>0" class="mt-4 ml-2 text-left" style="margin-bottom:-20px;">
+    <v-row
+      v-if="subLevelFilters.length > 0"
+      class="mt-4 ml-2 text-left"
+      style="margin-bottom: -20px"
+    >
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-chip
@@ -38,7 +47,10 @@
             @click="toogleSubCategory(category)"
           >
             {{ category }}
-            <v-icon v-if="filteredSubLevelCategory == category" color="lightgreen" right
+            <v-icon
+              v-if="filteredSubLevelCategory == category"
+              color="lightgreen"
+              right
               >filter_alt</v-icon
             >
             <v-icon v-else color="grey" right>filter_alt_off</v-icon>
@@ -90,25 +102,27 @@ export default {
   }),
   computed: {
     topLevelFilters: function () {
-        let rep = [];
-        for (let cat in recipesRawData) {
-            rep.push(cat)
-        }
-        return rep
+      let rep = [];
+      for (let cat in recipesRawData) {
+        rep.push(cat);
+      }
+      return rep;
     },
     subLevelFilters: function () {
-        let rep = [];
-        if (this.filteredTopLevelCategory == "")
-        {
-            return rep;
+      let rep = [];
+      if (this.filteredTopLevelCategory == "") {
+        return rep;
+      }
+      let catData = recipesRawData[this.filteredTopLevelCategory];
+      for (let subcat in catData) {
+        if (
+          typeof catData[subcat] == "object" &&
+          !("recipe" in catData[subcat])
+        ) {
+          rep.push(subcat);
         }
-        let catData = recipesRawData[this.filteredTopLevelCategory];
-        for (let subcat in catData) {
-            if (typeof catData[subcat] == "object" && !("recipe" in catData[subcat])) {
-                rep.push(subcat)
-            }
-        }
-        return rep
+      }
+      return rep;
     },
     filteredRecipes: function () {
       let rep = [];
@@ -127,12 +141,9 @@ export default {
           continue;
         }
         if (this.curFreeSearch != "") {
-          if (
-            Object.keys(recipe.ingredients)
-              .join(", ")
-              .toLowerCase()
-              .indexOf(search) == -1
-          ) {
+          let aSearchBase = Object.keys(recipe.ingredients).join(", ");
+          aSearchBase += ", " + recipe.name;
+          if (aSearchBase.toLowerCase().indexOf(search) == -1) {
             continue;
           }
         }
@@ -143,11 +154,13 @@ export default {
   },
   methods: {
     toogleCategory: function (category) {
-      this.filteredSubLevelCategory = ''
-      this.filteredTopLevelCategory = this.filteredTopLevelCategory == category ? "" : category;
+      this.filteredSubLevelCategory = "";
+      this.filteredTopLevelCategory =
+        this.filteredTopLevelCategory == category ? "" : category;
     },
     toogleSubCategory: function (category) {
-      this.filteredSubLevelCategory = this.filteredSubLevelCategory == category ? "" : category;
+      this.filteredSubLevelCategory =
+        this.filteredSubLevelCategory == category ? "" : category;
     },
     addNewRecipe: function (curTypePath, recipeName, recipeData) {
       recipeData["name"] = recipeName;
@@ -169,15 +182,15 @@ export default {
       }
     },
     saveCart: function () {
-        localStorage.setItem('cart', JSON.stringify(this.cart))
+      localStorage.setItem("cart", JSON.stringify(this.cart));
     },
     addToCart: function (recipename) {
       if (!this.cart[recipename]) {
-        this.$root.$set(this.cart, recipename, 1)
+        this.$root.$set(this.cart, recipename, 1);
       } else {
-        this.$root.$set(this.cart, recipename, this.cart[recipename]+1)
+        this.$root.$set(this.cart, recipename, this.cart[recipename] + 1);
       }
-        this.saveCart()
+      this.saveCart();
     },
     openCart: function () {
       this.$refs.recipesCart.open();
@@ -187,29 +200,30 @@ export default {
       if (!this.cart[recipeName]) {
         return;
       } else {
-        this.$root.$set(this.cart, recipeName, this.cart[recipeName]-1)
+        this.$root.$set(this.cart, recipeName, this.cart[recipeName] - 1);
       }
       if (this.cart[recipeName] == 0) {
-        this.$root.$delete(this.cart, recipeName)
+        this.$root.$delete(this.cart, recipeName);
       }
-      this.saveCart()
+      this.saveCart();
     },
     emptyCart: function () {
-        for (let recipe in this.cart) {
-            this.$root.$delete(this.cart, recipe)
-        }
-        this.saveCart()
-    }
+      for (let recipe in this.cart) {
+        this.$root.$delete(this.cart, recipe);
+      }
+      this.saveCart();
+    },
   },
   created: function () {
     this.computeRecipeData([], recipesRawData);
-    try
-    {
-        let parsedStorage = JSON.parse(localStorage.getItem('cart'));
-        if (parsedStorage) {
-            this.cart = parsedStorage
-        }
-    } catch (e){console.log('bite');}
+    try {
+      let parsedStorage = JSON.parse(localStorage.getItem("cart"));
+      if (parsedStorage) {
+        this.cart = parsedStorage;
+      }
+    } catch (e) {
+      console.log("bite");
+    }
   },
 };
 </script>

@@ -12,6 +12,10 @@
           readonly
           size="24"
         ></v-rating>
+        <v-spacer></v-spacer>
+        <v-btn icon @click="isOpened = false">
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
       </v-card-title>
       <v-carousel
         v-if="isComplete"
@@ -35,8 +39,13 @@
         Liste des ingredients
       </v-card-title>
       <v-card-text v-if="isComplete">
-        <ul v-for="quantity, ingredient in recipeData.ingredients" :key="ingredient">
-          {{ ingredient }}
+        <ul
+          v-for="(quantity, ingredient) in recipeData.ingredients"
+          :key="ingredient"
+        >
+          {{
+            ingredient
+          }}
         </ul>
       </v-card-text>
 
@@ -45,7 +54,7 @@
           {{ stepname }}
         </v-card-title>
         <v-card-text>
-          <ul v-for="action of value" :key="value+action">
+          <ul v-for="action of value" :key="value + action">
             {{
               action
             }}
@@ -70,14 +79,14 @@ export default {
   name: "PizzaReceipeDialog",
 
   components: {},
-  props: ["recipeData", "width", 'isComplete'],
+  props: ["recipeData", "width", "isComplete"],
   data: () => ({
     isOpened: false,
   }),
-  computed:{
-      dialogWidth: function () {
-          return this.width ? this.width : '800px'
-      }
+  computed: {
+    dialogWidth: function () {
+      return this.width ? this.width : "800px";
+    },
   },
   methods: {
     assetImage: function (imgPath) {
