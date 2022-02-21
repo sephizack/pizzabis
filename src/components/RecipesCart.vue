@@ -83,7 +83,7 @@
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn
-          v-if="isCartEmpty"
+          v-if="!isCartEmpty"
           color="green darken-1"
           text
           @click="$emit('emptyCart')"
