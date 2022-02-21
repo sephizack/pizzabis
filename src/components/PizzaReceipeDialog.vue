@@ -2,9 +2,9 @@
   <v-dialog v-model="isOpened" :width="dialogWidth">
     <v-card>
       <v-card-title>
-        <span class="text-h4 mb-2 mt-1">{{ recipeData.name }}</span>
+        <span class="text-h4 mb-2 mt-1 mr-3">{{ recipeData.name }}</span>
         <v-rating
-          class="ml-3 mb-1"
+          class="mb-1"
           :value="recipeData.rating"
           color="amber"
           dense
