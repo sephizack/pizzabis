@@ -5,7 +5,7 @@
     >
       <v-text-field
         outlined
-        label="Search for ingredients"
+        label="Recherchez une recette ou des ingredients"
         prepend-inner-icon="search"
         v-model="curFreeSearch"
       ></v-text-field>

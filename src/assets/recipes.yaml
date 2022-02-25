@@ -167,8 +167,19 @@ Pizze:
     Pizza Parma:
       rating: 3.5
       recipe:
-        TODO:
-          - todo
+        Mise en place:
+          - Egouter la mozzarella
+          - Copeaux de parmesan
+        Avant cuisson:
+          - Base Tomate
+          - Mozza
+          - Poivre
+        Apres cuisson:
+          - Jambon cru
+          - Parmesan
+          - Roquette
+          - Balsamique
+          - Fleur de sel
       ingredients:
         Tomate: 0
         Mozzarella: 1
