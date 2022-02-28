@@ -15,6 +15,7 @@ Antipasti:
       Fleur de sel: 0
       Poivre: 0
     images:
+      - pizza/foccacia2.jpg
       - pizza/foccacia.jpg
 Pizze:
   Pizza Rouges:
@@ -165,11 +166,12 @@ Pizze:
       images:
         - todo.jpg
     Pizza Parma:
-      rating: 3.5
+      rating: 4
       recipe:
         Mise en place:
           - Egouter la mozzarella
           - Copeaux de parmesan
+          - Torréfier les pignons
         Avant cuisson:
           - Base Tomate
           - Mozza
@@ -178,6 +180,7 @@ Pizze:
           - Jambon cru
           - Parmesan
           - Roquette
+          - Pignons
           - Balsamique
           - Fleur de sel
       ingredients:
@@ -185,10 +188,12 @@ Pizze:
         Mozzarella: 1
         Jambon cru: 2
         Parmesan: 0
+        Pignons: 0
         Roquette: 0
         Basilic: 0
         Balsamique: 0
       images:
+        - pizza/parma2.jpg
         - pizza/parma.jpg
   Pizza Blanches:
     Pizza Mortadella:
@@ -208,16 +213,19 @@ Pizze:
           - Mortadelle
           - Tomates Cerises
           - Pistaches
+          - Persillade
           - Copeaux de parmesan
       ingredients:
         Crème: 0
         Mortadelle: 4
         Pistaches: 0
         Mozzarella: 1
+        Parmesan: 0
         Tomates Cerises: 3
-        Persillade: 0
         Muscade: 0
+        Persillade: 0
       images:
+        - pizza/mortadella3.jpg
         - pizza/mortadella1.jpg
         - pizza/mortadella2.jpg
     Pizza Bleu-Noix:
