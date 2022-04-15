@@ -48,12 +48,13 @@ Pizze:
       rating: 4
       recipe:
         Mise en place:
-          - TODO
+          - Egouter la Burrata
+          - Preparer le jambon
         Avant cuisson:
           - Base Tomate
           - Mozza
         Post cuisson:
-          - Jambon cru
+          - Jambon speck
           - Burrata entière + Basilic
         Post ouverture Burrata:
           - Plus de basilic
@@ -63,7 +64,7 @@ Pizze:
         Tomate: 0
         Burrata: 1
         Mozzarella: 1
-        Jambon Cru: 2
+        Jambon Speck: 2
         Crème de Balsamique: 0
         Basilic: 0
       images:
@@ -71,8 +72,15 @@ Pizze:
     Pizza Chorizo:
       rating: 3
       recipe:
-        TODO:
-          - todo
+        Mise en place:
+          - Couper le Chorizo et le poivron
+        Avant cuisson:
+          - Tomate
+          - Poivron
+          - Paprika
+          - Chorizo
+        Post cuisson:
+          - Poivre
       ingredients:
         Tomate: 0
         Poivron: 1
@@ -84,8 +92,17 @@ Pizze:
     Pizza Prosciutto:
       rating: 4
       recipe:
-        TODO:
-          - todo
+        Mise en place:
+          - Egouter la mozzarella
+          - Decouper le champignon
+          - Preparer le basilic, jambon et persillade
+        Avant cuisson:
+          - Tomate
+          - Mozzarella
+        Post cuisson:
+          - Jambon
+          - Basilic
+          - Poivre
       ingredients:
         Tomate: 0
         Mozzarella: 1
@@ -96,8 +113,6 @@ Pizze:
     Pizza Tonno:
       rating: 2.5
       recipe:
-        TODO:
-          - todo
       ingredients:
         Tomate: 0
         Mozzarella: 1
@@ -110,13 +125,21 @@ Pizze:
     TODO - Pizza Carnasière:
       rating: 0
       recipe:
-        TODO:
-          - todo
+        Mise en place:
+          - Faites revenir les oignons
+          - Ajouter la viande et assaisonner
+        Avant cuisson:
+          - Tomate
+          - Preparation viande/oignons
+          - Mozzarella
+        Post cuisson:
+          - Olives
+          - Persillade
       ingredients:
         Tomate: 0
         Boeuf haché: 1
         Oignons: 0
-        Chorizo: 0
+        Mozzarella: 0
         Olives noire: 0
         Persillade: 0
       images:
@@ -124,8 +147,6 @@ Pizze:
     TODO - Pizza Althenoise:
       rating: 0
       recipe:
-        TODO:
-          - todo
       ingredients:
         Tomate: 0
         Paprika fumé: 0
@@ -136,13 +157,14 @@ Pizze:
         Pistaches: 0
       images:
         - todo.jpg
-    TODO - Pizza Asiatique:
+    TODO - Pizza Asiatique (vegan):
       rating: 0
       recipe:
-        TODO:
-          - todo
-        Cuire les legumes au Wok:
-          - todo
+        Mise en place:
+          - Cuire les legumes au Wok et assaisonner
+        Avant cuisson:
+          - Tomate
+          - Wok de legumes
       ingredients:
         Tomate: 0
         Champignons: 1
@@ -154,15 +176,13 @@ Pizze:
     TODO - Pizza Diavola:
       rating: 0
       recipe:
-        TODO:
-          - todo
       ingredients:
         Tomate: 0
         Mozzarella: 1
         Spianata calabrese: 2
+        Friarielli: 0
         Pecorino picant: 0
         Basilic: 0
-        Friarielli: 0
       images:
         - todo.jpg
     Pizza Parma:
@@ -269,8 +289,18 @@ Pizze:
     Pizza Dolomite:
       rating: 5
       recipe:
-        TODO:
-          - todo
+        Mise en place:
+          - Egouter la mozzarella
+          - Preparer la charcuterie
+          - Decouper le Brezain
+        Avant cuisson:
+          - Crème epaisse
+          - Muscade
+          - Brézain
+          - Mozza
+        Apres cuisson:
+          - Poivre
+          - Charcuterie
       ingredients:
         Crème: 0
         Mozzarella: 1
