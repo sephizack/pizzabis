@@ -112,7 +112,7 @@ Pizze:
         - pizza/prosciutto.jpg
     Pizza Tonno:
       rating: 2.5
-      recipe:
+      recipe: # TODO
       ingredients:
         Tomate: 0
         Mozzarella: 1
@@ -124,7 +124,7 @@ Pizze:
         - pizza/tonno.jpg
     TODO - Pizza Carnasière:
       rating: 0
-      recipe:
+      recipe: # TODO
         Mise en place:
           - Faites revenir les oignons
           - Ajouter la viande et assaisonner
@@ -146,7 +146,7 @@ Pizze:
         - todo.jpg
     TODO - Pizza Althenoise:
       rating: 0
-      recipe:
+      recipe: # TODO
       ingredients:
         Tomate: 0
         Paprika fumé: 0
@@ -276,13 +276,22 @@ Pizze:
     Pizza Miele Capra:
       rating: 3.5
       recipe:
-        TODO:
-          - todo
+        Mise en place:
+          - Chèvre
+        Avant cuisson:
+          - Crème épaisse
+          - Mozzarella
+          - Chèvre
+          - Miel
+        Post cuisson:
+          - Jambon
+          - Ciboulette
       ingredients:
         Crème: 0
         Chèvre: 0
         Mozzarella: 1
-        Jambon blanc: 0
+        Jambon: 0
+        Ciboulette: 0
         Miel: 0
       images:
         - pizza/mielecapra.jpg
@@ -312,9 +321,7 @@ Pizze:
         - pizza/dolomite.jpg
     TODO - Pizza Savoyarde:
       rating: 0
-      recipe:
-        TODO:
-          - todo
+      recipe: # TODO
       ingredients:
         Crème: 0
         Pomme de terre: 1
@@ -327,9 +334,7 @@ Pizze:
         - todo.jpg
     TODO - Pizza Indienne:
       rating: 3
-      recipe:
-        TODO:
-          - todo
+      recipe: # TODO
       ingredients:
         Crème: 0
         Curry: 0
@@ -340,9 +345,7 @@ Pizze:
         - todo.jpg
     TODO - Pizza Salmone:
       rating: 0
-      recipe:
-        TODO:
-          - todo
+      recipe: # TODO
       ingredients:
         Crème: 0
         Saumon fumé: 0
@@ -351,11 +354,9 @@ Pizze:
         Baies rose: 0
       images:
         - todo.jpg
-    TODO - Pizza Genova:
+    TODO - Pizza Genovese:
       rating: 0
-      recipe:
-        TODO:
-          - todo
+      recipe: # TODO
       ingredients:
         Pesto: 0
         Mozzarella: 1
@@ -364,11 +365,9 @@ Pizze:
         Pignons: 0
       images:
         - todo.jpg
-    TODO - Pizza 4 Formaggi:
+    TODO - Pizza Quatro Formaggi:
       rating: 0
-      recipe:
-        TODO:
-          - todo
+      recipe: # TODO
       ingredients:
         Crème: 0
         Scarmozza: 1
