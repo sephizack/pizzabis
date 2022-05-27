@@ -365,7 +365,7 @@ Pizze:
         Pignons: 0
       images:
         - todo.jpg
-    TODO - Pizza Quatro Formaggi:
+    Pizza Quatro Formaggi:
       rating: 0
       recipe: # TODO
       ingredients:
