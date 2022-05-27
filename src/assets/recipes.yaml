@@ -377,7 +377,7 @@ Pizze:
         Poivre: 0
         Ciboulette: 0
       images:
-        - todo.jpg
+        - pizza/quatroFormaggi.jpg
   Pâte à pizza:
     Pate Ooni:
       rating: 0
