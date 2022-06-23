@@ -462,3 +462,18 @@ Pasta:
         Basilic: 0
     images:
       - pasta/carbo.jpg
+  Pasta all'amatriciana:
+    rating: 4.5
+    recipe:
+      - TODO:
+        - todo
+    ingredients:
+        Linguine: 0
+        Guanciale: 0
+        Polpa: 0
+        Oignon: 1
+        Ail: 1
+        Pecorrino Romano: 100
+        Basilic: 0
+    images:
+      - pasta/all-amatriciana.jpg
