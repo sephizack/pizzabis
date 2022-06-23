@@ -457,7 +457,7 @@ Pasta:
         Spaghettoni: 0
         Guanciale: 0
         Grana Padano: 100
-        Pecorrino Romano: 100
+        Pecorino Romano: 100
         Oeuf: 2
         Basilic: 0
     images:
@@ -473,7 +473,7 @@ Pasta:
         Polpa: 0
         Oignon: 1
         Ail: 1
-        Pecorrino Romano: 100
+        Pecorino Romano: 100
         Basilic: 0
     images:
       - pasta/all-amatriciana.jpg
