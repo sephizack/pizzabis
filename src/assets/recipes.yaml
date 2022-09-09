@@ -89,6 +89,30 @@ Pizze:
         Poivre de Madagascar: 0
       images:
         - pizza/chorizo.jpg
+    TODO - Pizza Aubergine:
+      rating: 0
+      recipe:
+        Mise en place:
+          - Egouter la mozzarella
+          - Decouper le aubergines, salez et nettoyer apres quelques minutes
+          - Preparer l'huile de basilic
+          - Découper le chorizo
+        Avant cuisson:
+          - Tomate
+          - Aubergines
+          - Mozzarella
+          - Chorizo
+          - Poivre
+        Post cuisson:
+          - Huile basilic
+      ingredients:
+        Tomate: 0
+        Aubergine: 1
+        Chorizo: 0
+        Mozzarella: 1
+        Basilic: 0
+      images:
+        - todo.jpg
     Pizza Prosciutto:
       rating: 4
       recipe:
