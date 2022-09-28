@@ -4,6 +4,16 @@
       <v-card-title class="mt-4 ml-3">
         Panier actuel
         <v-spacer></v-spacer>
+        <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+                <a v-if="!isCartEmpty" download="panier-gli-amici.txt" :href=panierDownloadableData v-bind="attrs" v-on="on" style="text-decoration:none;">
+                    <v-btn color="primary darken-1" outlined icon style="margin-right:10px" title="Exporter le panier">
+                        <v-icon dark>download</v-icon>
+                    </v-btn>
+                </a>
+            </template>
+            <span>Exporter le panier</span>
+        </v-tooltip>
         <v-btn icon @click="isOpened = false">
           <v-icon>mdi-close</v-icon>
         </v-btn></v-card-title
@@ -75,8 +85,8 @@
         <PizzaReceipeDialog
           ref="receipeDialoag"
           :recipe-data="curRecipeData"
-          width="600px"
-          :is-complete="false"
+          width="700px"
+          :is-complete="true"
         />
       </span>
 
@@ -150,6 +160,19 @@ export default {
       });
       return totalIngredientsList;
     },
+    panierDownloadableData: function () {
+        let data = "Recettes:\n"
+        for (let receipe of Object.keys(this.cartData))
+        {
+            data += ` - ${receipe}: ${this.cartData[receipe]}\n`
+        }
+        data += `\nTotal des ingredients\n`
+        for (let ingredient of this.totalIngredients)
+        {
+            data += ` - ${ingredient.name}: ${ingredient.q}\n`
+        }
+        return 'data:text/plain;charset=utf-8,' + encodeURIComponent(data)
+    }
   },
   methods: {
     displayRecipeInfo: function (recipename) {
@@ -158,7 +181,7 @@ export default {
     },
     open: function () {
       this.isOpened = true;
-    },
+    }
   },
 };
 </script>

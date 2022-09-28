@@ -130,7 +130,7 @@ Pizze:
       ingredients:
         Tomate: 0
         Mozzarella: 1
-        Jambon blanc: 0
+        Jambon blanc: 2
         Basilic: 0
       images:
         - pizza/prosciutto.jpg
@@ -308,13 +308,13 @@ Pizze:
           - Chèvre
           - Miel
         Post cuisson:
-          - Jambon
+          - Jambon Blanc
           - Ciboulette
       ingredients:
-        Crème: 0
+        Crème: 50
         Chèvre: 0
         Mozzarella: 1
-        Jambon: 0
+        Jambon Blanc: 1
         Ciboulette: 0
         Miel: 0
       images:
@@ -385,7 +385,7 @@ Pizze:
         Pesto: 0
         Mozzarella: 1
         Parmesan: 0
-        Jambon cru: 0
+        Jambon cru: 2
         Pignons: 0
       images:
         - todo.jpg
