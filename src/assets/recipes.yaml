@@ -44,6 +44,7 @@ Pizze:
         Basilic: 0
       images:
         - pizza/reine1.jpg
+        - pizza/reine2.jpg
     Pizza Burrata Speck:
       rating: 4
       recipe:
@@ -89,30 +90,31 @@ Pizze:
         Poivre de Madagascar: 0
       images:
         - pizza/chorizo.jpg
-    TODO - Pizza Aubergine:
-      rating: 0
+    Pizza Aubergine:
+      rating: 4.5
       recipe:
         Mise en place:
+          - Aubergines grillées au four
           - Egouter la mozzarella
-          - Decouper le aubergines, salez et nettoyer apres quelques minutes
-          - Preparer l'huile de basilic
+          - Preparer le basilic
           - Découper le chorizo
         Avant cuisson:
           - Tomate
-          - Aubergines
+          - Aubergines grillées
           - Mozzarella
           - Chorizo
           - Poivre
         Post cuisson:
-          - Huile basilic
+          - Pesto
       ingredients:
         Tomate: 0
         Aubergine: 1
+        Pesto: 0
         Chorizo: 0
         Mozzarella: 1
         Basilic: 0
       images:
-        - todo.jpg
+        - pizza/aubergine.jpg
     Pizza Prosciutto:
       rating: 4
       recipe:
@@ -146,28 +148,31 @@ Pizze:
         Poivre: 0
       images:
         - pizza/tonno.jpg
-    TODO - Pizza Carnasière:
-      rating: 0
-      recipe: # TODO
+    Pizza Carnassière:
+      rating: 4.8
+      recipe:
         Mise en place:
           - Faites revenir les oignons
           - Ajouter la viande et assaisonner
+          - Découper le Chorizo
         Avant cuisson:
           - Tomate
           - Preparation viande/oignons
           - Mozzarella
+          - Chorizo
         Post cuisson:
           - Olives
-          - Persillade
+          - Pesto
       ingredients:
         Tomate: 0
         Boeuf haché: 1
         Oignons: 0
+        Chorizo: 0
         Mozzarella: 0
+        Pesto: 0
         Olives noire: 0
-        Persillade: 0
       images:
-        - todo.jpg
+        - pizza/carnassiere.jpg
     TODO - Pizza Althenoise:
       rating: 0
       recipe: # TODO
@@ -256,8 +261,8 @@ Pizze:
         Post cuisson:
           - Mortadelle
           - Tomates Cerises
+          - Pesto
           - Pistaches
-          - Persillade
           - Copeaux de parmesan
       ingredients:
         Crème: 0
@@ -267,13 +272,14 @@ Pizze:
         Parmesan: 0
         Tomates Cerises: 3
         Muscade: 0
-        Persillade: 0
+        Pesto: 0
       images:
+        - pizza/mortadelle_bis.jpg
         - pizza/mortadella3.jpg
         - pizza/mortadella1.jpg
         - pizza/mortadella2.jpg
     Pizza Bleu-Noix:
-      rating: 4.5
+      rating: 4.6
       recipe:
         Mise en place:
           - Decouper le bleu et le cantal en dès
@@ -309,16 +315,19 @@ Pizze:
           - Miel
         Post cuisson:
           - Jambon Blanc
+          - Noix
           - Ciboulette
       ingredients:
         Crème: 50
-        Chèvre: 0
         Mozzarella: 1
+        Chèvre: 0
+        Noix: 0
         Jambon Blanc: 1
         Ciboulette: 0
         Miel: 0
       images:
         - pizza/mielecapra.jpg
+        - pizza/mielecapra2.jpg
     Pizza Dolomite:
       rating: 5
       recipe:
@@ -342,6 +351,7 @@ Pizze:
         Bresaola: 2
         Poivre de Madagascar: 0
       images:
+        - pizza/dolomite2.jpg
         - pizza/dolomite.jpg
     TODO - Pizza Savoyarde:
       rating: 0
@@ -367,17 +377,28 @@ Pizze:
         Paprika fumé: 0
       images:
         - todo.jpg
-    TODO - Pizza Salmone:
-      rating: 0
-      recipe: # TODO
+    Pizza Salmone:
+      rating: 3.5
+      recipe:
+        Mise en place:
+          - Découper le saumon
+        Avant cuisson:
+          - Creme
+          - Mozzarella
+          - Saumon
+          - Poivre
+        Post cuisson:
+          - Saumon
+          - Aneth
+          - 5 Baies
       ingredients:
         Crème: 0
+        Mozzarella: 0
         Saumon fumé: 0
-        Citron: 0
-        Aneth: 0
-        Baies rose: 0
+        Aneth fraiche: 0
+        5 Baies: 0
       images:
-        - todo.jpg
+        - pizza/salmone_v1.jpg
     TODO - Pizza Genovese:
       rating: 0
       recipe: # TODO
@@ -390,7 +411,7 @@ Pizze:
       images:
         - todo.jpg
     Pizza Quatro Formaggi:
-      rating: 0
+      rating: 3.5
       recipe: # TODO
       ingredients:
         Crème: 0
@@ -435,21 +456,23 @@ Pizze:
           - Nutella + Tonka
         Post cuisson:
           - Nutella Tonka
-          - Banane
-          - Pistaches
+          - Banane (optionel)
+          - Pistaches / Noisettes
           - Tonka
       ingredients:
         Nutella: 0
         Fève de Tonka: 0
         Banane: 0
         Pistaches: 0
+        Noisettes: 0
       images:
         - pizza/nutella.jpg
+        - pizza/nutella2.jpg
 Pasta:
   Cacio e Pepe:
     rating: 4.5
     recipe:
-      - TODO:
+      TODO:
         - todo
     ingredients:
         Linguine: 0
@@ -458,20 +481,61 @@ Pasta:
         Basilic: 0
     images:
       - pasta/caccioepepe1.jpg
-  Pasta con Polpete:
+  Polpete di Capistrello:
     rating: 4.5
     recipe:
-      - TODO:
+      TODO:
         - todo
     ingredients:
         Penne rigate: 0
-        Sauce tomate: 0
-        Polpete: 0
+        Sugo: 0
+        Boeuf haché: 300
+        Veau haché: 300
+        Pain: 100
+        Lait: 100
+        Ail: 1
+        Persil: 0
+        Oeufs: 2
         Poivre: 0
         Grana Padano: 0
         Basilic: 0
     images:
-      - pasta/polpete.jpg
+      - pasta/polpete_capistrello.jpg
+  Polpete di Pedicorti:
+    rating: 4.5
+    recipe:
+      Préparation des Polpete:
+        - Mélanger le boeuf avec les oeufs
+        - Laiser tremper le pain dans le Lait
+        - Passer 2 fois les polpete dans la farine
+      Cuisson des Polpete:
+        - Faire frire dans l'huile de tournesol
+        - Egouter et reserver
+        - Garder l'huile pour la sauce
+      Préparation de la Sauce:
+        - Faire chaufer de huile de tournesol
+        - Ajouter de la Pancetta et un oignon cisellé
+        - Ajouter la polpa, beacoup d'eau et du laurier
+        - Laisser mijoter
+        - Ajouter l'huile de cuisson des polpete
+        - Ajouter les Polpete
+        - Laisser mijoter
+        - Ajuster assaisonnement
+      Semoule:
+        - Faites bouillir de l'eau avec un peu de fond de Veau
+        - Verser dans la semoule
+      Service:
+        - Servir le tout avec un peu de parmesan
+    ingredients:
+        Semoule: 0
+        Polpa: 0
+        Boeuf haché: 600
+        Pain: 100
+        Lait: 100
+        Oeufs: 2
+        Pancetta: 0
+    images:
+      - pasta/polpete_pedicorti.jpg
   Pasta alla carbonara:
     rating: 4.5
     recipe:
@@ -501,3 +565,18 @@ Pasta:
         Basilic: 0
     images:
       - pasta/all-amatriciana.jpg
+Condiments:
+  Pesto basilic pistache:
+    rating: 4.5
+    recipe:
+      Preparation:
+        - Dans un mixeur mélanger tout les elements
+        - Mixer et ajuster l'hile pour obtenir la texture souhaitée
+    ingredients:
+      Pistaches: 30
+      Basilic: 10
+      Parmesan: 20
+      Huile d'olive: 60
+      Poivre: 1
+    images:
+      - pizza/pesto_pistache.jpg
