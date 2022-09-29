@@ -472,8 +472,18 @@ Pasta:
   Cacio e Pepe:
     rating: 4.5
     recipe:
-      TODO:
-        - todo
+      Début de cuisson:
+        - Faire bouillir de l'eau salé
+        - Ajouter les pates jusqu'à mi-cuisson
+      Concentration de l'amidon:
+        - Dans un wok ou une sauteuse
+        - Ajouter le poivre
+        - Ajouter de l'eau des pates
+        - Déplacer les pates dans le wok
+        - Mouiller avec l'eau de cuisson des pates jusqu'à avoir une cuisson parfaite
+      Finalisation:
+        - Ajouter le parmesan en mélangant pour eviter de laisser agglomérer
+        - Servir avec quelques feuilles de basilic
     ingredients:
         Linguine: 0
         Poivre: 0
@@ -539,22 +549,63 @@ Pasta:
   Pasta alla carbonara:
     rating: 4.5
     recipe:
-      - TODO:
-        - todo
+      Début de cuisson:
+        - Faire bouillir de l'eau salé
+        - Ajouter les pates jusqu'à mi-cuisson
+      Concentration de l'amidon:
+        - Dans un wok ou une sauteuse
+        - Ajouter le Guanciale
+        - Laisser griller un peu
+        - Ajouter de l'eau des pates
+        - Déplacer les pates dans le wok
+        - Mouiller avec l'eau de cuisson des pates jusqu'à avoir une cuisson parfaite
+      Finalisation:
+        - Mélanger dans un bol les jaune d'oeufs, le parmesan et le pecorino
+        - Ajouter aux pates en mélangeant energiquement
+        - Servir avec quelques morceaux de guanciale frit et du parmesan
     ingredients:
         Spaghettoni: 0
         Guanciale: 0
         Grana Padano: 100
         Pecorino Romano: 100
         Oeuf: 2
-        Basilic: 0
     images:
       - pasta/carbo.jpg
+  Pasta al pesto di pistacchio:
+    rating: 0
+    recipe:
+      Début de cuisson:
+        - Faire bouillir de l'eau salé
+        - Ajouter les pates jusqu'à mi-cuisson
+      Concentration de l'amidon:
+        - Dans un wok ou une sauteuse
+        - Ajouter les pistaches
+        - Ajouter de l'eau des pates
+        - Déplacer les pates dans le wok
+        - Mouiller avec l'eau de cuisson des pates jusqu'à avoir une cuisson parfaite
+      Finalisation:
+        - Ajouter le pesto et mélanger
+        - Servir avec un peu de parmesan
+    ingredients:
+        Spaghettoni: 0
+        Pesto di pistacchio: 0
+        Grana Padano: 100
+        Pistaches: 0
+    images:
+      - todo.jpg
   Pasta all'amatriciana:
     rating: 4.5
     recipe:
-      - TODO:
-        - todo
+      Déut de cuisson:
+        - Faire bouillir de l'eau salé
+        - Ajouter les pates jusqu'à trois-quart cuisson
+      Préparation de la sauce:
+        - Dans un wok ou une sauteuse
+        - Ajouter le guanciale et l'oignon
+        - Ajouter la polpa et l'ail
+        - Déplacer les pates dans le wok
+        - Finir de cuire les pates dans la sauce
+        - Servir avec un peu de pecorino et quelques feuilles de basilic
     ingredients:
         Linguine: 0
         Guanciale: 0
