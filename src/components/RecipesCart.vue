@@ -4,9 +4,9 @@
       <v-card-title class="mt-4 ml-3">
         Panier actuel
         <v-spacer></v-spacer>
-        <v-tooltip bottom>
+        <v-tooltip bottom v-if="!isCartEmpty">
             <template v-slot:activator="{ on, attrs }">
-                <a v-if="!isCartEmpty" download="panier-gli-amici.txt" :href=panierDownloadableData v-bind="attrs" v-on="on" style="text-decoration:none;">
+                <a download="panier-gli-amici.txt" :href=panierDownloadableData v-bind="attrs" v-on="on" style="text-decoration:none;">
                     <v-btn color="primary darken-1" outlined icon style="margin-right:10px" title="Exporter le panier">
                         <v-icon dark>download</v-icon>
                     </v-btn>

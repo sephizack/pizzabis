@@ -25,7 +25,7 @@
         delimiter-icon="mdi-minus"
         ref="carousel"
         height="400"
-        :show-arrows="recipeData.images.length > 1"
+        :show-arrows="recipeData.images && recipeData.images.length > 1"
       >
         <v-carousel-item
           v-for="img in recipeData.images"
