@@ -5,7 +5,7 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import '@mdi/font/css/materialdesignicons.css'
 
 Vue.use(Vuetify);
-
+Vue.config.ignoredElements = ["amp-ad"];
 export default new Vuetify({
     theme: {
         dark: false,
