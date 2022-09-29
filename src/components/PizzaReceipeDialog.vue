@@ -36,6 +36,7 @@
           @click.stop="$refs.carousel.next()"
         ></v-carousel-item>
       </v-carousel>
+
       <v-card-title v-if="isComplete" class="ml-4" padding="1">
         Liste des ingredients
       </v-card-title>
@@ -62,7 +63,7 @@
           </ul>
         </v-card-text>
       </div>
-
+        
       <v-card-actions>
         <v-spacer></v-spacer>
 
