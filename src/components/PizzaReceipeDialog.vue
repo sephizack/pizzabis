@@ -47,7 +47,7 @@
         >
           {{
             ingredient
-          }}
+          }} <span style="font-size:0.9em;color:#808080">({{quantity}})</span>
         </ul>
       </v-card-text>
 
