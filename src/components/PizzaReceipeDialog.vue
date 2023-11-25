@@ -37,31 +37,25 @@
         ></v-carousel-item>
       </v-carousel>
 
-      <v-card-title v-if="isComplete" class="ml-4" padding="1">
-        Liste des ingredients
-      </v-card-title>
-      <v-card-text v-if="isComplete">
-        <ul
-          v-for="(quantity, ingredient) in recipeData.ingredients"
-          :key="ingredient"
-        >
-          {{
-            ingredient
-          }} <span style="font-size:0.9em;color:#808080">({{quantity}})</span>
-        </ul>
-      </v-card-text>
 
-      <div v-for="(value, stepname) of recipeData.recipe" :key="stepname">
-        <v-card-title class="ml-3" padding="1">
-          {{ stepname }}
-        </v-card-title>
-        <v-card-text>
-          <ul v-for="action of value" :key="value + action">
-            {{
-              action
-            }}
-          </ul>
-        </v-card-text>
+      <div class='row' v-for="(stepPair,pairidx) of recipeStepsPairArray" :key="pairidx">
+        <div class='column' v-for="(value) of stepPair" :key="value.title">
+          <v-card-title v-if="isComplete" class="ml-4" padding="1">
+            {{ value.title }}
+          </v-card-title>
+          <v-card-text v-if="value.type == 'ingredients'">
+            <ul>{{
+              value.content
+            }}</ul>
+          </v-card-text>
+          <v-card-text v-else>
+            <ul v-for="action of value.content" :key="value.title + action">
+              {{
+                action
+              }}
+            </ul>
+          </v-card-text>
+        </div>
       </div>
 
       <amp-ad width="100vw" height="320"
@@ -76,9 +70,9 @@
       <v-card-actions>
         <v-spacer></v-spacer>
 
-        <v-btn color="green darken-1" text @click="isOpened = false">
+        <!-- <v-btn color="green darken-1" text @click="isOpened = false">
           Fermer
-        </v-btn>
+        </v-btn> -->
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -98,6 +92,32 @@ export default {
     dialogWidth: function () {
       return this.width ? this.width : "800px";
     },
+    recipeStepsPairArray: function () {
+      this.recipeData.recipe
+      let ret = [];
+      if (this.isComplete)
+      {
+        ret.push({
+          type: "ingredients",
+          content: Object.keys(this.recipeData.ingredients).join(", "),
+          title: "Ingredients",
+        });
+      }
+      for (let step in this.recipeData.recipe) {
+        ret.push({
+          type: "step",
+          content: this.recipeData.recipe[step],
+          title: step,
+        });
+      }
+      
+      // Make it a array of pairs
+      let retPairByPair = [];
+      for (let i = 0; i < ret.length; i += 2) {
+        retPairByPair.push(ret.slice(i, i + 2));
+      }
+      return retPairByPair;
+    }
   },
   methods: {
     assetImage: function (imgPath) {

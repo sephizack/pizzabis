@@ -32,16 +32,18 @@ Pizze:
           - Champignons
           - Poivre
         Post cuisson:
-          - Jambon Blanc
+          - Jambon blanc
           - Basilic
           - Persillade
+          - Olives noires (optionel)
       ingredients:
         Tomate: 0
         Mozzarella: 1
         Champignons de paris: 1
-        Jambon Blanc: 2
+        Jambon blanc: 2
         Persillade: 0
         Basilic: 0
+        Olives noires: 0
       images:
         - pizza/reine1.jpg
         - pizza/reine2.jpg
@@ -253,7 +255,6 @@ Pizze:
           - Concasser les pistaches
           - Couper les copeaux de parmesan
           - Couper les tomates en 4 et saler
-          - Preparer la mortadelle
         Avant cuisson:
           - Base Creme, Muscade, Poivre
           - Mozzarella
@@ -314,7 +315,7 @@ Pizze:
           - Chèvre
           - Miel
         Post cuisson:
-          - Jambon Blanc
+          - Jambon blanc
           - Noix
           - Ciboulette
       ingredients:
@@ -322,12 +323,34 @@ Pizze:
         Mozzarella: 1
         Chèvre: 0
         Noix: 0
-        Jambon Blanc: 1
+        Jambon blanc: 1
         Ciboulette: 0
         Miel: 0
       images:
         - pizza/mielecapra.jpg
         - pizza/mielecapra2.jpg
+    Pizza Parma Capra:
+      rating: 4
+      recipe:
+        Mise en place:
+          - Chèvre
+        Avant cuisson:
+          - Sauce Tomate
+          - Mozzarella
+          - Chèvre
+        Post cuisson:
+          - Jambon cru
+          - Ciboulette
+          - Olives noires
+      ingredients:
+        Tomate: 0
+        Mozzarella: 1
+        Chèvre: 0
+        Jambon cru: 2
+        Ciboulette: 0
+        Olives noires: 0
+      images:
+        - pizza/parmacapra.jpg
     Pizza Dolomite:
       rating: 5
       recipe:
@@ -347,7 +370,7 @@ Pizze:
         Crème: 0
         Mozzarella: 1
         Brézain: 0
-        Jambon Blanc: 1
+        Jambon blanc: 1
         Bresaola: 2
         Poivre de Madagascar: 0
       images:
@@ -429,11 +452,11 @@ Pizze:
       recipe:
         Preparation:
           - Mesurer Farine / Eau / Levure et Sel via l'appli Ooni
-          - Mélanger levure + un peu d'eau puis un peu de farine
-          - Mettre le sel dans l'eau
-          - Attendre 10-15 minutes
-          - Ajouter le reste de l'eau puis la farine
-          - Pétrir environ 20min
+          - Dans un grand saladier, deposer la levure, 100g d'eau et 50g de farine ()
+          - Dans un autre contenant, melanger le reste de l'eau, le sel et l'huile
+          - Attendre 10 min
+          - Ajouter le reste de l'eau puis la farine dans le grand saladier
+          - Pétrir environ 20min jusqu'à obtenion d'une pâte lisse et homogène
           - Toute les 30-40 mins tourner la pâte (2 à 4 fois)
           - Diviser en pâtons
         Cuisson de la pate:
