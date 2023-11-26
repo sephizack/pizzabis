@@ -204,6 +204,29 @@ Pizze:
         Paprika fumé: 0
       images:
         - todo.jpg
+    Pizza Mexicaine:
+      rating: 3.9
+      recipe:
+        Mise en place:
+          - Faire cuire la saucisse avec du piment et du paprika
+          - Faire revenie les oignons, poivrons et piment + paprika
+        Avant cuisson:
+          - Base Tomate
+          - Saucisse
+          - Poivrons oignons
+          - Pecorino
+        Apres cuisson:
+          - Basilic
+      ingredients:
+        Tomate: 0
+        Saucisse picante: 2
+        Pecorino: 0
+        Poivrons: 1
+        Piment: 0
+        Paprika: 0
+        Basilic: 0
+      images:
+        - pizza/mexicaine.jpg
     TODO - Pizza Diavola:
       rating: 0
       recipe:
