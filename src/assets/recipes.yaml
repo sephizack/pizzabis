@@ -616,6 +616,7 @@ Pasta:
         Pecorino Romano: 100
         Oeuf: 2
     images:
+      - pasta/carbo0.jpg
       - pasta/carbo.jpg
   Pasta al pesto di pistacchio:
     rating: 0
