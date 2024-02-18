@@ -49,20 +49,7 @@
       </v-btn>
       <v-spacer></v-spacer>
       <div class="mr-4">{{ quantityInCart }}</div>
-      <v-tooltip bottom>
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            title="Ajouter au panier"
-            icon
-            @click="$emit('addToCart', recipeData.name)"
-            v-bind="attrs"
-            v-on="on"
-          >
-            <v-icon>mdi-plus</v-icon>
-          </v-btn>
-        </template>
-        <span>Ajouter au panier</span>
-      </v-tooltip>
+      
       <v-tooltip bottom>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
@@ -73,6 +60,20 @@
             v-on="on"
           >
             <v-icon>mdi-minus</v-icon>
+          </v-btn>
+        </template>
+        <span>Ajouter au panier</span>
+      </v-tooltip>
+      <v-tooltip bottom>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            title="Ajouter au panier"
+            icon
+            @click="$emit('addToCart', recipeData.name)"
+            v-bind="attrs"
+            v-on="on"
+          >
+            <v-icon>mdi-plus</v-icon>
           </v-btn>
         </template>
         <span>Ajouter au panier</span>

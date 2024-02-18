@@ -103,12 +103,14 @@ export default {
           title: "Ingredients",
         });
       }
+      let count = 1;
       for (let step in this.recipeData.recipe) {
         ret.push({
           type: "step",
           content: this.recipeData.recipe[step],
-          title: step,
+          title: count + " - " + step,
         });
+        count++;
       }
       
       // Make it a array of pairs

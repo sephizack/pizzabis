@@ -412,7 +412,7 @@ Pizze:
         Poivre de Madagascar: 0
       images:
         - todo.jpg
-    TODO - Pizza Indienne:
+    Pizza Indienne:
       rating: 3
       recipe: # TODO
       ingredients:
@@ -420,9 +420,9 @@ Pizze:
         Curry: 0
         Mozzarella: 1
         Poulet: 0
-        Paprika fumé: 0
+        Poivre: 0
       images:
-        - todo.jpg
+        - pizza/indienne.jpg
     Pizza Salmone:
       rating: 3.5
       recipe:
@@ -593,22 +593,26 @@ Pasta:
     images:
       - pasta/polpete_pedicorti.jpg
   Pasta alla carbonara:
-    rating: 4.5
+    rating: 4.6
     recipe:
+      Préparation:
+        - Mélanger dans un bol les jaune d'oeufs, le parmesan et le pecorino
+        - Découper le Guanciale en cube de 1cm environ
       Début de cuisson:
-        - Faire bouillir de l'eau salé
-        - Ajouter les pates jusqu'à mi-cuisson
+        - Faire bouillir de l'eau salée
+        - Ajouter les pates
+      Préparation du Guanciale:
+        - En parallele, prendre un wok ou une sauteuse
+        - Ajouter le Guanciale et laisser griller
+        - Reservez quelques morceaux pour garder le croustillant pour le dressage
       Concentration de l'amidon:
-        - Dans un wok ou une sauteuse
-        - Ajouter le Guanciale
-        - Laisser griller un peu
-        - Ajouter de l'eau des pates
-        - Déplacer les pates dans le wok
+        - Environ 2 minutes avant la fin de cuisson des pates, les déplacer dans le wok
         - Mouiller avec l'eau de cuisson des pates jusqu'à avoir une cuisson parfaite
       Finalisation:
-        - Mélanger dans un bol les jaune d'oeufs, le parmesan et le pecorino
-        - Ajouter aux pates en mélangeant energiquement
-        - Servir avec quelques morceaux de guanciale frit et du parmesan
+        - Une fois les pates cuites, couper le feu et laisser refroidir 20-30 secondes
+        - Faire en sorte d'avoir un fond d'eau dans le wok pour ne pas avoir une sauce trop épaisse
+        - Ajouter le mélange d'oeuf et de fromage tout en mélangeant pour éviter de laisser agglomérer
+        - Servir avec quelques morceaux de guanciale frit et du pécorino rapé
     ingredients:
         Spaghettoni: 0
         Guanciale: 0
