@@ -562,7 +562,8 @@ Pasta:
     recipe:
       Préparation des Polpete:
         - Mélanger le boeuf avec les oeufs
-        - Laiser tremper le pain dans le Lait
+        - Laiser tremper le pain dans le Lait, essorer un peu et mélanger avec le bœuf.
+        - Ajuster les quantités pour obtenir des polpete suffisement ferme
         - Passer 2 fois les polpete dans la farine
       Cuisson des Polpete:
         - Faire frire dans l'huile de tournesol
